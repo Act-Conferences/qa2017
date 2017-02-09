@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
 
 <head>
-<title>[% title %] - Perl QA Hackathon 2016 - Rugby, UK</title>
+<title>[% title %] - Perl QA Hackathon 2017 - Lyon, France</title>
 <!-- Document Metadata -->
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
 <!-- OpenId -->
@@ -51,10 +51,10 @@
     <div id="outer">
     <div id="berlin">
     <a href="[% make_uri('') %]">
-      <div id="ellis"><img src="/qa2016/img/2016-qa-hack-webb-ellis.png" /></div>
-      <div id="tower"><img src="/qa2016/img/2016-qa-hack-clock-tower.png" /></div>
-      <img id="qname" src="/qa2016/img/2016-qa-hack-title.png" />
-      <div class="footer">April 21-24 @ Rugby, UK</div>
+      <div id="ellis"><img src="/qa2017/img/2016-qa-hack-webb-ellis.png" /></div>
+      <div id="tower"><img src="/qa2017/img/2016-qa-hack-clock-tower.png" /></div>
+      <img id="qname" src="/qa2017/img/2016-qa-hack-title.png" />
+      <div class="footer">May 11-14 @ Lyon, France</div>
     </a>
     </div>
 

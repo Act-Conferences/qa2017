@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
+
+<head>
+<title>[% title %] - Perl QA Hackathon 2016 - Rugby, UK</title>
+<!-- Document Metadata -->
+<meta http-equiv="Content-Language" content="[% global.request.language %]" />
+<!-- OpenId -->
+[% IF openid %]
+<link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
+[% END %]
+<!-- Atom news feed -->
+<link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
+      href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
+[%- IF title -%]<title>[% title  %]</title>[%- END -%]
+
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" />
+<link rel="stylesheet" type="text/css" href="/css/act-base.css" />
+<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
+
+<!-- JavaScript sugar -->
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/act.js"></script>
+
+<!-- Favorite icon -->
+<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+<!--
+  <div id="header">
+    [%- IF title -%]<h2>[% title  %]</h2>[%- END -%]
+  </div>
+-->
+
+  <div id="menu">
+  <h2><a href="[% make_uri('sponsors.html') %]">Sponsors</a></h2>
+  <h2><a href="[% make_uri('venue.html') %]">Venue</a></h2>
+  <h2><a href="[% make_uri('budget.html') %]">Budget</a></h2>
+  <h2><a href="[% make_uri('donate.html') %]">Donate</a></h2>
+    [% PROCESS menu %]
+  </div>
+
+  <div id="content">
+    <div id="outer">
+    <div id="berlin">
+    <a href="[% make_uri('') %]">
+      <div id="ellis"><img src="/qa2016/img/2016-qa-hack-webb-ellis.png" /></div>
+      <div id="tower"><img src="/qa2016/img/2016-qa-hack-clock-tower.png" /></div>
+      <img id="qname" src="/qa2016/img/2016-qa-hack-title.png" />
+      <div class="footer">April 21-24 @ Rugby, UK</div>
+    </a>
+    </div>
+
+    [% content %]
+  </div>
+
+  <div id="footer">
+    Powered by <a href="http://act.mongueurs.net/">Act</a> — A Conference Toolkit
+  | Running on <a href="http://www.freebsd.org">FreeBSD</a>
+  </div>
+
+</div>
+<div id="sponsors">
+
+<h2><a href="sponsors.html">Sponsors</a></h2>
+<h3><a href="donate.html">Donate</a></h3><br>
+
+<a href="https://www.fastmail.com/"><img class="icon" src="[% make_uri('img/logo-fastmail.png') %]" width="220" alt="FastMail" title="FastMail"></a><br><br>
+<a href="https://www.ziprecruiter.com/"><img class="icon" src="[% make_uri('img/logo-ziprecruiter.png') %]" width="220" alt="ZipRecruiter" title="ZipRecruiter"></a><br><br>
+<a href="http://www.activestate.com/"><img class="icon" src="[% make_uri('img/logo-activestate.png') %]" width="220" alt="ActiveState" title="ActiveState"></a><br><br>
+<a href="http://www.opusvl.com/"><img class="icon" src="[% make_uri('img/logo-opusvl.png') %]" width="220" alt="OpusVL" title="OpusVL"></a><br><br>
+<a href="http://www.strato.de/"><img class="icon" width="200" src="[% make_uri('img/strato-logo-tr.png') %]" alt="STRATO" title="STRATO"></a><br><br>
+<a href="http://www.surevoip.co.uk/"><img class="icon" width="200" src="[% make_uri('img/logo-surevoip.png') %]" alt="SureVOIP" title="SureVOIP"></a><br><br>
+<a href="http://www.cv-library.co.uk/"><img class="icon" width="200" src="[% make_uri('img/logo-cv-library.png') %]" alt="CV-Library" title="CV-Library"></a><br><br>
+
+<a href="http://perl.iinteractive.com/">Infinity Interactive</a><br><br>
+<a href="http://www.perl.careers/">Perl Careers</a><br><br>
+<a href="http://www.mongodb.org/">MongoDB</a><br><br>
+<a href="http://www.thinkproject.com/">think project!</a><br><br>
+<a href="https://www.dreamhost.com/">DreamHost</a><br><br>
+<a href="http://www.campusexplorer.com">Campus Explorer</a><br><br>
+<a href="http://www.perl6.org/">The Perl 6 Community</a><br><br>
+
+</div>
+
+</body>
+</html>

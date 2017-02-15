@@ -1,22 +1,66 @@
-[% WRAPPER ui title = global.conference.name %]
+[% WRAPPER ui title = global.conference.name _ " - Donate" %]
 
-<h2>Support the hackathon</h2>
+<h1>You can help the Perl Toolchain Summit too</h1>
 
-<p>If you want to support the hackathon and the projects that we will
-work on, you can make a donation.
-Any money not used for this hackathon will go to the organizers of the
-next hackathon.</p>
+<h2>Why donate?</h2>
 
-<h3>How?</h3>
+<p> 
+You're a Perl user. You appreciate the quality of the language. You
+think it worth to invest some money to have help these people make
+Perl, CPAN, MetaCPAN even better...
+</p><p>
+The money that will not be used for the Perl Toolchain Summit 2017
+will be donated for the next edition.
+</p><p>
+You can get a good idea of how much money we need and what it will be used
+for by looking at our <a href="[% make_uri('budget.html')%]">preliminary
+budget</a>.
+</p>
 
-<p>As we all benefit from the work done by these volunteers, this event is entirely paid for through sponsorship and donations.
-If your company uses Perl, maybe you could ask them to contribute? Alternatively, if you wish to as an individual, would like to donate, you can.</p>
+<h2>How?</h2>
 
-<p>Donations can be made via the <strong><em>Enlightened Perl Organisation</em></strong> (EPO):</p>
-<p><a href="https://members.enlightenedperl.org/drupal/donate-perlqa?id=6">https://members.enlightenedperl.org/drupal/donate-perlqa?id=6</a></p>
+<p>You can donate to the hackathon in EUR (€), USD ($) and GBP (£).<br>
+Choose the button (you'll be redirected to Paypal) and select the amount:</p>
 
-<p>If your company needs invoicing for sponsorship, or a larger donation, let us know and the EPO will bill you.
-An invoice can be selected from the online portal for those who use that route.</p>
+[% paypal = [
+      [ 'EUR (€)', "KYBLEGX8RMG2J" ],
+      [ 'USD ($)', "DTFUFWKK5Y4F2" ],
+      [ 'GBP (£)', "URS5VUBPQGG7C" ],
+   ];
+   FOREACH item = paypal
+%]
+<p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="[% item.1 %]">
+	<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!"> in [% item.0 %]
+	<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+</form>
 
+</p>
+[% END %]
+
+<p>
+If you don't like PayPal, and prefer to make a direct money transfer
+to <a href="http://www.mongueurs.net/">Les Mongueurs de Perl</a>
+(the non-profit organisation handling the financial aspects of this edition of the Perl Toolchain Summit),
+you can use the following information:
+<ul>
+<li>Email: <tt>contact@mongueurs.net</tt></li>
+<li>IBAN: FR76 3006 6108 7600 0102 7540 188</li>
+<li>BIC: CMCIFRPP</li>
+</ul>
+</p>
+
+<h2>Thank you!</h2>
+
+<!--
+<p>The following people already gave some money to the hackathon:</p>
+
+<ul>
+<li>Laurent Boivin</li>
+</ul>
+-->
 
 [% END %]
+

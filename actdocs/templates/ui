@@ -44,14 +44,14 @@
   <body id="Body">
     <div class="container-fluid">
       <div class="hero-unit">
-        <a href="/qa2014/" style="text-decoration:none;">
+        <a href="/qa2017/" style="text-decoration:none;">
           <div class="visible-phone">
             <div class="header-titre">
               <h1>
                 <img style="max-height:150px;" src="[% make_uri_info('pix', 'onion.png') %]" alt="Logo ognion"/><br />
-                    Perl QA Hackathon 2014
+                    Perl Toolchain Summit 2017
               </h1>
-              <p> March 13-16, 2014 in Lyon </p>
+              <p> May 11-14, 2017 in Lyon </p>
             </div>
           </div>
 
@@ -67,8 +67,8 @@
                       &nbsp;
                     </td>
                     <td align="right" style='padding:10px'>
-                      <h1> Perl QA Hackathon 2014 </h1>
-                      <h2> March 13-16, 2014<br />in Lyon, France </h2>
+                      <h1> Perl Toolchain Summit 2017
+                      <h2> May 11-14, 2017<br />in Lyon, France </h2>
                     </td>
                   </tr>
                 </tbody>
@@ -88,7 +88,7 @@
                       &nbsp;
                     </td>
                     <td align="right" style='padding:10px'>
-                      <h2> March 13-16, 2014<br />in Lyon, France </h2>
+                      <h2> May 11-14, 2017<br />in Lyon, France </h2>
                     </td>
                   </tr>
                 </tbody>

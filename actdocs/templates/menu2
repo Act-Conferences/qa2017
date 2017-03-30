@@ -21,10 +21,7 @@
         <a href="[% make_uri('donate.html') %]"> Donate </a>
     </li>
     <li>
-        <a href="[% make_uri('venue.html') %]"> Venue </a>
-    </li>
-    <li>
-        <a href="[% make_uri('accommodation.html') %]"> Accommodation </a>
+        <a href="[% make_uri('accommodation.html') %]"> Venue &amp; Accommodation </a>
     </li>
     <li>
     </li>

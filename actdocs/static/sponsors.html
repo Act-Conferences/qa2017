@@ -1,239 +1,93 @@
 [% WRAPPER ui title = global.conference.name %]
 
-<div class="topcontent">
+<p>This event is free for those that attend. We aim to sponsor the travel and accommodation costs for those who can not
+otherwise get funding, we also provide refreshments and work space during the day.</p>
+<p>In order to help cover these costs we would be delighted to receive donations of any size. If you, or your company,
+would like to sponsor this event please email <tt>neilb @ cpan.org</tt>. You can also make a
+<a href="donate.html">donation here</a>.</p>
 
 <p>
-This event is free for those that attend. We aim to sponsor the travel and accommodation costs for those who can not otherwise get funding, we also provide refreshments and work space during the day.
-</p><p>
-In order to help cover these costs we would are delighted to receive donations of any size. If you, or your company, would like to sponsor this event please email <tt>contact@mongueurs.net</tt>.
+We want to thank the companies, organisations, inkind and individual sponsors that help us make the
+[% global.conference.name %].
 </p>
 
-  <p>
-      We want to thank the <a href="#corporate">companies</a> and <a href="#community">organisations</a> that help us make the Perl QA Hackathon 2014. 
-  </p>
-</div>
+<ul>
+<li><a href="#gold">Gold Sponsors</a></li>
+<li><a href="#silver">Silver Sponsors</a></li>
+<li><a href="#bronze">Bronze Sponsors</a></li>
+<li><a href="#individual">Individual Sponsors</a></li>
+</ul>
 
-[% BLOCK sponsor %]
-[% url_show = url_show || url %]
-<div class="litcontent">
-  <a name="[% lnk %]"></a>
-  <h3>
-    [% name %]
-  </h3>
-  <a class="left" href="[% url %]"><img class="icon" src="[% make_uri('pix')%]/[% img %]" alt="[% name %]" title="[% name %]" /></a>
-  <p>
-    [% content %]
-  </p>
-  <p>&nbsp;&nbsp;»&nbsp;<a href="[% url %]">[% url_show %]</a></p>
-  <hr/>
-</div>
-[% END %]
+<hr>
+<h2 id="gold">Our Gold Sponsors</h2>
 
-<h2><a name="host"></a>
-      Our host
-</h2>
-
+<h3>Perl Careers</h3>
 <p>
-This year the hackathon is hosted in the
-<a href="[% make_uri('accommodation.html') %]">Lyon office</a> of
-<a href="http://www.booking.com/?aid=313263">Booking.com</a>.
+<a href="http://www.perl.careers/"><img class="icon" src="[% make_uri('img/logo-perlcareers.png') %]" width="250" alt="Perl Careers" title="Perl Careers"></a><br>
+<a href="https://opensource.careers/perl-careers">Perl Careers</a> is a Perl-focused recruitment consultancy, run by a Peter Sergeant, a CPAN contributor (PAUSE id <a href="https://metacpan.org/author/SARGIE">SARGIE</a>) with a recruitment background, rather than by a non-technical person. Peter works with clients and candidates in London, the US, and Australia. Peter is not only sponsoring the QAH, he's attending it as well, to work on some of his Test modules.
 </p>
+<hr style="border-top: dashed 1px;" />
 
-[% WRAPPER sponsor
-img = 'logo_bookingcom_100.png'
-name = 'Booking.com'
-url = 'http://www.booking.com/?aid=313263'
-url_show = 'http://www.booking.com/'
-lnk = 'booking'
-%]
+<h3>FastMail</h3>
 <p>
-Booking.com B.V., part of Priceline.com (Nasdaq:PCLN), owns and operates Booking.com™, one of the world's leading online hotel reservations agencies by room nights sold, attracting over 30 million unique visitors each month worldwide. As a result of the market leading growth, the Booking.com group of companies currently employs over 6 000 professionals in more than 120 offices to ensure the best possible online services and support.
-</p><p>
-Established in 1996, Booking.com B.V. guarantees the best prices for any type of property, ranging from small independent hotels to a five star luxury through Booking.com. The Booking.com website is available in 41 languages and offers over 440.000 hotels in 190 countries.
+<a href="https://www.fastmail.com/"><img class="icon" src="[% make_uri('img/logo-fastmail.png') %]" width="250" alt="FastMail" title="FastMail"></a><br>
+<a href="https://www.fastmail.com/">Fastmail.com</a> is a commercial hosted email service founded in 1999, and which has established a reputation for technical leadership in the hosted email space, with a focus on security, privacy, and reliability. It is run by FastMail Pty Ltd, an Australian company based in Melbourne. From their early days they've been users and supporters of Perl, and several of their developers are CPAN authors.
 </p>
-[% END %]
+<hr style="border-top: dashed 1px;" />
 
-<h2><a name="corporate"></a>
-      Our corporate sponsors
-</h2>
-
-[% WRAPPER sponsor
-img = 'logo_splio.png'
-name = 'SPLIO'
-url = 'http://www.splio.com/'
-lnk = 'splio'
-%]
+<h3>ActiveState</h3>
 <p>
-Splio assists its clients in creating and managing multichannel marketing
-strategies for prospects and customers.
+<a href="http://www.activestate.com/"><img class="icon" src="[% make_uri('img/logo-activestate.png') %]" width="250" alt="ActiveState" title="ActiveState"></a><br>
+Since 1997, <a href="http://www.activestate.com">ActiveState</a> has been providing software application development and management solutions, especially around Perl. <a href="http://www.activestate.com/activeperl">ActivePerl</a> (the original "Perl for Windows" distro), <a href="http://www.activestate.com/perl-dev-kit">Perl Dev Kit</a>, and polyglot <a href="http://www.activestate.com/developer-tools/komodo/komodo-ide">Komodo IDE</a> are some of the flagship products that have made them renowned by Perl developers around the world. More than two million developers and 97% of Fortune 1000 companies use ActiveState's solutions to develop, distribute, and manage their software applications. Global customers like Bank of America, CA, Cisco, HP, Lockheed Martin and Siemens rely on ActiveState for faster development, ensuring IT governance and compliance, and accelerating time to market.
 </p>
+<hr style="border-top: dashed 1px;" />
+
+<p><a href="http://www.booking.com">Booking.com</a> is a world leader in booking accomodations online. Each day, over 1,000,000 room nights are reserved on Booking.com.</p>
+<hr style="border-top: dashed 1px;" />
+
+<hr>
+<h2 id="silver">Our Silver Sponsors</h2>
+
+<h3>SureVOIP</h3>
 <p>
-For 10 years, Splio has been renowned for its innovating solutions
-dedicated to the marketing managers (CRM and eCRM, email and SMS
-marketing, loyalty programs). Splio distinguishes itself by its
-ability to deliver functionnal SaaS platforms, available on internet
-and customized specifically for each client.
+<a href="http://www.surevoip.co.uk/"><img class="icon" src="[% make_uri('img/logo-surevoip.png') %]" width="250" alt="SureVOIP" title="SureVOIP"></a><br>
+SureVoIP&reg; (<a href="http://www.suretecsystems.com">Suretec Systems Ltd.</a>) is an <a href="http://www.ofcom.org.uk/about/what-is-ofcom/">Ofcom</a>-registered Internet Telephony Service Provider supplying Hosted VoIP solutions, SIP trunks, UK inbound numbers, International SIP numbers, a partner program, <a href="http://www.surevoip.co.uk/support/wiki/api_documentation">public API</a> (powered by <a href="http://www.catalystframework.org/">Catalyst</a>) and other related VoIP products and services. </p>
+<p>Based in Aberdeen, Scotland it also provides VoIP optimised internet connectivity to its customers in order for them to connect directly to its <a href="http://www.surevoip.co.uk/about/our-network">core network</a> for the best VoIP experience.</p>
+<p>Wherever possible SureVoIP builds its services and tools on open source software, and likes to support the relevant communities where it can (they have also sponsored the London Perl Workshop in the past). A number of CPAN distributions were <a href="http://www.surevoip.co.uk/blog/2012/05/28/surevoip-api-major-components-open-sourced/">developed with the support of SureVoIP</a> and are available via <a href="https://github.com/suretec">its GitHub account</a>. Suretec's founder Gavin Henry is also a CPAN author: <a href="https://metacpan.org/author/GHENRY">GHENRY</a>.
 </p>
+<hr style="border-top: dashed 1px;" />
+
+<h3>MongoDB</h3>
 <p>
-Splio's expertise is now available in China, Italy, Spain, France and
-Brazil. All the products are designed and developed in the headquarters
-located near Paris.
+<a href="http://www.mongodb.org/"><img class="icon" src="[% make_uri('img/mongodb-logo-web.png') %]" width="250" alt="MongoDB" title="MongoDB"></a><br>
+By offering the best of traditional databases as well as the flexibility, scale, and performance required by today’s applications, <a href="https://www.mongodb.com">MongoDB</a> lets innovators deploy apps as big as they can possibly dream. From startups to enterprises, for the modern and the mission-critical, MongoDB is the database for giant ideas.  MongoDB has offered a Perl driver since 2009 and is one of the only major next-generation database companies to offer an internally-developed and officially-supported Perl client.  MongoDB believes in the Perl community; they regularly host Perl Meetups in their NYC office and send developers to major conferences.
 </p>
-[% END %]
+<hr style="border-top: dashed 1px;" />
 
-[% WRAPPER sponsor
-img = 'GrantStreetGroup.png'
-name = 'Grant Street Group'
-url = 'http://www.grantstreet.com'
-lnk = 'grantstreetgroup'
-%]
+
+<hr>
+<h2 id="bronze">Our Bronze Sponsors</h2>
+
+<p><a href="http://www.perl-services.de/impressum.html">Perl services</a> is the contracting company of Ren&eacute;e B&auml;cker, a CPAN author (<a href="https://metacpan.org/author/RENEEB">RENEEB</a>) since 2004.</p>
+
+<h3>OpusVL</h3>
 <p>
-Grant Street Group is a growing technology company located in downtown Pittsburgh 
-that serves the finance industry with over 1.5 million lines of Perl code.
+<a href="http://www.opusvl.com/"><img class="icon" src="[% make_uri('img/logo-opusvl.png') %]" width="250" alt="OpusVL" title="OpusVL"></a><br>
+<a href="http://www.opusvl.com/">OpusVL</a> are the Open Source business management software specialists who like to ask searching questions. Things like, “How would a business run without software?”. The reason they do this is to make sure they understand fully all the processes that are needed to make a business run smoothly – and how to streamline them for maximum efficiency.
 </p>
-<p>
-GSG employs a diverse group of talented, motivated professionals who are committed 
-to flawless work and customer service. Our specialty is innovating custom software 
-solutions for auctions of fixed income securities, tax collection and billing systems, 
-and e-payments.
-</p>
-<p>
-We need skilled software engineers to add to our friendly, talented team of 
-developers - <a href="http://www.grantstreet.com/careers/">telecommuting positions</a> are available.
-</p>
-[% END %]
+<hr style="border-top: dashed 1px;" />
 
-[% WRAPPER sponsor
-img = 'dyn.png'
-name = 'DYN'
-url = ' http://www.dyn.com/'
-lnk = 'dyn'
-%]
-<p>
-Dyn is built upon open source software and as such believes in the
-importance of contributing back to open source communities. Dyn does so
-by sponsoring conferences where the communities can grow and thrive, and
-donating money, services, and resources to open source projects. Dyn
-also encourages its employees to create, test, and improve upon open
-source projects that they have interest in.
-</p><p>
-Founded in 1998, Dyn<http://www.dyn.com/>  is the worldwide leader in
-Internet Infrastructure-as-a-Service (IaaS<http://www.dyn.com/>),
-powering DNS<http://www.dyn.com/dns> and Email
-Delivery<http://www.dyn.com/email> for more than four million
-enterprise, small business and personal users.  With 17 data centers
-around the world and industry-leading uptime for over 10 years, Dyn’s
-commitment to customer relationships and engineering excellence shines
-every day. Uptime is the Bottom Line.
-</p><p>
-<a href="http://www.dyn.com">To learn more about Dyn</a>, follow us on
-twitter (@Dyn)
-</p>
-[% END %]
+<p><a href="http://www.oetiker.ch/en/">Oetiker+Partner</a> is a Swiss-based software consultancy that almost exclusively use open source software. Beyond their customer projects, they have open-sourced a number of <a href="http://www.oetiker.ch/en/oss/projects/">their own projects</a>.</p>
 
-[% WRAPPER sponsor
-img = 'logo.CampusExplorer.png'
-name = 'Campus Explorer'
-url = ' http://www.campusexplorer.com'
-lnk = 'campusexplorer'
-%]
-<p>
-Campus Explorer is a rapidly growing internet start-up located in Santa 
-Monica, CA, that is dedicated to building the web's premier college search 
-and resource site. CampusExplorer.com offers students a suite of interactive, 
-personalized services that enable them to be more organized and informed 
-during their college searches.
-</p>
-[% END %]
-
-[% WRAPPER sponsor
-img = 'evozon.png'
-name = 'EVOZON'
-url = ' http://www.evozon.com/'
-lnk = 'evozon'
-%]
-<p>
-We have a team of over 30 full-time Perl developers, 220 developers in total, that have in-depth experience developing Perl using a wide range of frameworks. The technologies we use daily include Catalyst, Mojolicious, Dancer, Mason, mod_perl, Moose, Template::Toolkit, DBIx::Class and Class::DBI with MySQL or PostgreSQL all architected in a high availability and scalable model with the best practices one would expect.  Every project is assigned a skilled team, fully equipped to deal with all the requirements of our partnership/joint effort including dedicated QA.
-</p><p>
-We one of very few companies that develop Perl web applications in house and have been doing so for 8 years.  Evozon offers custom software solutions, business analysis and project management across the widest possible range of technologies and platforms for web and mobile.
-</p><p>
-Moreover, we are crazy about start-ups and here is where we let our Perl experts do their magic to speed up your time to market. Our marketing team can also be involved doing research and analysis for the pre-launch strategy empowered by the vision you have shared with us and you’ll have a passionate team working by your side doing what they love.
-Evozon is also actively involved in the development of the perl community including creating and sponsoring the Cluj Perl Mongers group (www.cluj.pm), sponsoring and participating with talks at YAPC Europe, London Perl Workshop and contributing to CPAN.
-</p><p>
-If you want to learn more about Evozon or wish to get in touch with us, visit www.evozon.com for more details.
-</p><p>
-<a href="http://www.evozon.com">To learn more about Evozon</a>
-</p>
-[% END %]
+<p><a href="http://capside.com/en/">CAPSiDE</a> is a systems engineering company specialized in technological consulting and professional services, counting with expert engineers about high availability systems, networks and software developing.</p>
 
 
-[% WRAPPER sponsor
-img = 'elasticsearch.jpg'
-name = 'elasticsearch'
-url = ' http://www.elasticsearch.com'
-lnk = 'elasticsearch'
-%]
-Elasticsearch,Inc. is on a mission to make massive amounts of data usable for 
-businesses everywhere by delivering the world’s most advanced search and 
-analytics engine available. With a laser focus on achieving the best user 
-experience imaginable, the Elasticsearch ELK stack - comprised of 
-Elasticsearch, Logstash, and Kibana - has become one of the most popular 
-and rapidly growing open source solutions in the market. <br />
-To learn more, visit elasticsearch.com
-[% END %]
+<h2>Individual sponsors</h2>
 
+<p>We would also like to thank the following members of the Perl community, who made personal contributions. Thank you!</p>
 
-
-[% WRAPPER sponsor
-img = 'eligo.jpg'
-name = 'ELIGO'
-url = ' http://www.eligo.co.uk'
-lnk = 'eligo'
-%]
-[% END %]
-
-
-
-<h2><a name="community"></a>
-      Our community sponsors
-</h2>
-
-[% WRAPPER sponsor
-img = 'logo_mongueurs.png'
-name = 'Mongueurs de Perl'
-url = 'http://www.mongueurs.pm/'
-lnk = 'mongueurs'
-%]
-<p>
-The French Perl Mongers is a non-profit association whose main goal is
-to promote Perl in French speaking events.
-It organizes events such as the <a href="http://journeesperl.fr/" 
-alt="Les Journées Perl">Journées Perl (French Perl Workshop)</a>,
-the <a href="http://patch.pm/" alt="Patch -p1">patch -p<i>n</i></a> hackathons
-and the <a href="http://osdc.fr" alt="OSDC.fr">French Open Source 
-Developer Conference (OSDC.fr)</a>. 
-</p>
-<p>
-It also sponsors Perl projects like <a href="http://perldancer.org/">Dancer</a>,
-<a href="http://fusioninventory.org/">Fusion Inventory</a>,
-and the Perl QA Hackathons.
-</p>
-[% END %]
-
-[% WRAPPER sponsor
-img = 'camelia-logo_100.png'
-name = 'WenZPerl for the Perl6 Community'
-url = 'http://perl6.org/'
-lnk = 'wenzperl'
-%]
-<p>
-The <a href="http://perl6.org/" alt="Perl6">Perl6 community</a>
-is supporting this event using WenZPerl as plenipotentiary.
-</p>
-<p>
-WenZPerl is the new company of our famous Liz and Wendy.
-</p>
-[% END %]
-
+<ul>
+<li>Charlie Gonzales </li>
+</ul>
 
 [% END %]

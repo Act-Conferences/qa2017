@@ -1,13 +1,13 @@
 [% WRAPPER ui title = global.conference.name %]
 
+<h1>Perl QA Hackathon 2014 in Lyon</h1>
+
 <h2>What is the QA Hackathon?</h2>
 
 <p>A free of charge coding workshop for people involved in Quality Assurance, testing,
 packaging, CPAN, and other projects related to quality assurance. The workshop is not necessarily exclusive
 to Perl projects, however, many of the attendees will be planning to work on projects
 that have a direct benefit to the Perl language.
-</p>
-<p>This year's Hackathon will be held at the <b><a href="http://www.therugbyhotel.co.uk/">The Rugby Hotel</a> in Rugby, UK from April 21-24</b>.
 </p>
 
 <p>The Perl QA Hackathon is the next in a series of annual events, following on from successful Hackathons in:</p>
@@ -19,23 +19,19 @@ that have a direct benefit to the Perl language.
 <li><a href="http://act.qa-hackathon.org/qa2011">Amsterdam 2011</a></li>
 <li><a href="http://act.qa-hackathon.org/qa2012">Paris 2012</a></li>
 <li><a href="http://act.qa-hackathon.org/qa2013">North West England 2013</a></li>
-<li><a href="http://act.qa-hackathon.org/qa2014">Lyon 2014</a></li>
-<li><a href="http://act.qa-hackathon.org/qa2015">Berlin 2015</a></li>
 </ul>
 
 <p>These events were a great success for the Perl and Open Source communities, as well as the attendees.</p>
 
-<p>
-The Perl QA Hackathon is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found at:
-<a href="[% make_uri('code-of-conduct.html') %]">Code of Conduct</a>
-</p>
+<h2>When, and where, is it happening?</h2>
 
-<p>
-Watch this space for updates, or check the <a href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">feed</a>.
-</p>
+<p>The hackathon is a four day event that takes place from Thursday <b>March 13<sup>th</sup></b>
+to Sunday <b>March, 16<sup>th</sup> 2014</b>, all the day long.</p>
+<p>The Perl QA Hackathon 2014 will be held in the beautiful city of Lyon, France, in the premises
+of <a href="http://booking.com/" alt="Booking.com" target="_new">Booking.com</a>.</p>
 
-[% news = global.news(3);
-   IF news.size > 2;
+[% news = global.news(4);
+   IF news.size > 3;
      more = news.pop;
    END;
  %]

@@ -2,93 +2,140 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
 
-<head>
-<title>[% title %] - Perl QA Hackathon 2017 - Lyon, France</title>
-<!-- Document Metadata -->
-<meta http-equiv="Content-Language" content="[% global.request.language %]" />
-<!-- OpenId -->
-[% IF openid %]
-<link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
-[% END %]
-<!-- Atom news feed -->
-<link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
-      href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
-[%- IF title -%]<title>[% title  %]</title>[%- END -%]
+  <head>
+    <!-- Document Metadata -->
+    <meta http-equiv="Content-Language" content="[% global.request.language %]" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OpenId -->
+    [% IF openid %]
+      <link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
+    [% END %]
+    <!-- Atom news feed -->
+    <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
+          href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
+    [%- IF title -%]<title>[% title  %]</title>[%- END -%]
 
-<!-- CSS Stylesheets -->
-<link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" />
-<link rel="stylesheet" type="text/css" href="/css/act-base.css" />
-<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
+    <!-- CSS Stylesheets -->
+    <!-- <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" /> -->
+    <link rel="stylesheet" type="text/css" href="/css/act-base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/schedule.css" />
+    <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'bootstrap.min.css') %]" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'bootstrap-responsive.min.css') %]" media="screen" />
+    <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'qa2014.css') %]" />
 
-<!-- JavaScript sugar -->
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/act.js"></script>
+    <!-- JavaScript sugar -->
+    <script src="[% make_uri_info('js', 'jquery-1.9.0.min.js') %]"></script>
+    <script src="[% make_uri_info('js', 'bootstrap.min.js') %]"></script>
+    <script>
+        $('.dropdown-toggle').dropdown();
+    </script>
+    <script src="/js/act.js"></script>
 
-<!-- Favorite icon -->
-<link rel="shortcut icon" type="image/png" href="/favicon.png" />
-</head>
+    <!-- Favorite icon -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
-<body>
+    <!-- Pour Facebook -->
+    <meta property="og:image" content="[% global.request.base_url %][% make_uri_info('pix', 'logo_mongueurs.png') %]" />
+    <link rel="image_src" content="[% global.request.base_url %][% make_uri_info('pix', 'logo_mongueurs.png') %]" />
 
+  </head>
 
-<div id="wrapper">
+  <body id="Body">
+    <div class="container-fluid">
+      <div class="hero-unit">
+        <a href="/qa2014/" style="text-decoration:none;">
+          <div class="visible-phone">
+            <div class="header-titre">
+              <h1>
+                <img style="max-height:150px;" src="[% make_uri_info('pix', 'onion.png') %]" alt="Logo ognion"/><br />
+                    Perl QA Hackathon 2014
+              </h1>
+              <p> March 13-16, 2014 in Lyon </p>
+            </div>
+          </div>
 
-<!--
-  <div id="header">
-    [%- IF title -%]<h2>[% title  %]</h2>[%- END -%]
-  </div>
--->
+          <div class="visible-tablet">
+            <div class="header-titre">
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td>
+                      <img style="max-height:150px;" src="[% make_uri_info('pix', 'onion.png') %]" alt="Logo ognion"/><br />
+                    </td>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td align="right" style='padding:10px'>
+                      <h1> Perl QA Hackathon 2014 </h1>
+                      <h2> March 13-16, 2014<br />in Lyon, France </h2>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-  <div id="menu">
-  <h2><a href="[% make_uri('sponsors.html') %]">Sponsors</a></h2>
-  <h2><a href="[% make_uri('venue.html') %]">Venue</a></h2>
-  <h2><a href="[% make_uri('budget.html') %]">Budget</a></h2>
-  <h2><a href="[% make_uri('donate.html') %]">Donate</a></h2>
-    [% PROCESS menu %]
-  </div>
+          <div class="row-fluid visible-desktop">
+            <div class="header-titre">
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td>
+                      <img style="max-height:150px;" src="[% make_uri_info('pix', 'pts-logo-head.png') %]" alt="Logo PTS"/>
+                    </td>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td align="right" style='padding:10px'>
+                      <h2> March 13-16, 2014<br />in Lyon, France </h2>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </a>
+      </div>
 
-  <div id="content">
-    <div id="outer">
-    <div id="berlin">
-    <a href="[% make_uri('') %]">
-      <div id="ellis"><img src="/qa2017/img/2016-qa-hack-webb-ellis.png" /></div>
-      <div id="tower"><img src="/qa2017/img/2016-qa-hack-clock-tower.png" /></div>
-      <img id="qname" src="/qa2017/img/2016-qa-hack-title.png" />
-      <div class="footer">May 11-14 @ Lyon, France</div>
-    </a>
+      <div class="row-fluid hidden-desktop">
+        <div class="span2">
+          [% PROCESS menu2 %]
+        </div>
+        <div class="span10 thumbnail">
+          [% content %]
+        </div>
+      </div>
+
+      <div class="row-fluid visible-desktop">
+        <div class="span2">
+          [% PROCESS menu2 %]
+          <span class="desktop">[% # PROCESS twitter %]</span>
+        </div>
+        <div class="span8 thumbnail">
+          [% content %]
+        </div>
+        <div class="span2">
+          [% PROCESS sponsors %]
+        </div>
+      </div>
     </div>
 
-    [% content %]
-  </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span4 offset2">
+            [% PROCESS menus/pre_confs %]
+          </div>
+          <div class="span4">
+            [% PROCESS menus/act_confs %]
+          </div>
+          <p id="copyright">
+            Powered by <a href="http://act.mongueurs.net/">Act</a>
+            | Running on <a href="http://www.freebsd.org/">FreeBSD</a></p>
+        </div>
+      </div>
+    </footer>
 
-  <div id="footer">
-    Powered by <a href="http://act.mongueurs.net/">Act</a> — A Conference Toolkit
-  | Running on <a href="http://www.freebsd.org">FreeBSD</a>
-  </div>
-
-</div>
-<div id="sponsors">
-
-<h2><a href="sponsors.html">Sponsors</a></h2>
-<h3><a href="donate.html">Donate</a></h3><br>
-
-<a href="https://www.fastmail.com/"><img class="icon" src="[% make_uri('img/logo-fastmail.png') %]" width="220" alt="FastMail" title="FastMail"></a><br><br>
-<a href="https://www.ziprecruiter.com/"><img class="icon" src="[% make_uri('img/logo-ziprecruiter.png') %]" width="220" alt="ZipRecruiter" title="ZipRecruiter"></a><br><br>
-<a href="http://www.activestate.com/"><img class="icon" src="[% make_uri('img/logo-activestate.png') %]" width="220" alt="ActiveState" title="ActiveState"></a><br><br>
-<a href="http://www.opusvl.com/"><img class="icon" src="[% make_uri('img/logo-opusvl.png') %]" width="220" alt="OpusVL" title="OpusVL"></a><br><br>
-<a href="http://www.strato.de/"><img class="icon" width="200" src="[% make_uri('img/strato-logo-tr.png') %]" alt="STRATO" title="STRATO"></a><br><br>
-<a href="http://www.surevoip.co.uk/"><img class="icon" width="200" src="[% make_uri('img/logo-surevoip.png') %]" alt="SureVOIP" title="SureVOIP"></a><br><br>
-<a href="http://www.cv-library.co.uk/"><img class="icon" width="200" src="[% make_uri('img/logo-cv-library.png') %]" alt="CV-Library" title="CV-Library"></a><br><br>
-
-<a href="http://perl.iinteractive.com/">Infinity Interactive</a><br><br>
-<a href="http://www.perl.careers/">Perl Careers</a><br><br>
-<a href="http://www.mongodb.org/">MongoDB</a><br><br>
-<a href="http://www.thinkproject.com/">think project!</a><br><br>
-<a href="https://www.dreamhost.com/">DreamHost</a><br><br>
-<a href="http://www.campusexplorer.com">Campus Explorer</a><br><br>
-<a href="http://www.perl6.org/">The Perl 6 Community</a><br><br>
-
-</div>
-
-</body>
+  </body>
 </html>

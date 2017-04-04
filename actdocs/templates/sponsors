@@ -5,94 +5,92 @@
     [% END %]
   [% END %]
 
+  [% BLOCK isponsorbronze %]
+    [% WRAPPER menus/section %]
+    <p><a class="icon" href="[% url %]">[% name %]</a></p>
+    [% END %]
+  [% END %]
+
 <center>
   [% WRAPPER menus/section %]
   <a href="[% make_uri('sponsors.html') %]">Sponsors</a>
   [% END %]
 
-  <a href="[% make_uri('donate.html') %]"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" title="Donate to the hackathon using PayPal" alt="Donate to the hackathon using PayPal"></a>
+  <a href="[% make_uri('donate.html') %]"><img src="[% make_uri('pix')%]/btn_donate_LG.gif" border="0" title="Donate to the hackathon using PayPal" alt="Donate to the hackathon using PayPal"></a>
 
   [% WRAPPER isponsor
-  img = "logo_bookingcom_225.png"
-  name = "Booking.com"
+  img = 'logo_bookingcom_225.png'
+  name = 'Booking.com'
   url = 'http://booking.com/'
-  lnk = 'booking'
   %]
   [% END %]
 
   [% WRAPPER isponsor
-  img = "logo_splio.png"
-  name = "Splio"
-  url = 'http://splio.com/'
-  lnk = 'splio'
+  img = 'logo-perlcareers.png'
+  name = 'Perl Careers'
+  url = 'http://www.perl.careers/'
   %]
   [% END %]
 
   [% WRAPPER isponsor
-  img = 'camelia-logo_225.png'
-  name = "Perl6"
-  url = 'http://perl6.org/'
-  lnk = 'wenzperl'
+  img = 'logo-activestate.png'
+  name = 'ActiveState'
+  url = 'http://www.activestate.com/'
   %]
   [% END %]
 
   [% WRAPPER isponsor
-  img = 'eligo.png'
-  name = 'ELIGO'
-  url = ' http://www.eligo.co.uk'
-  lnk = 'eligo'
-  %]
-  [% END %]
-
-[% WRAPPER isponsor
-img = 'GrantStreetGroup.png'
-name = 'Grant Street Group'
-url = 'http://www.grantstreet.com'
-lnk = 'grantstreetgroup'
-%]
-  [% END %]
-
-  [% WRAPPER isponsor
-  img = 'dyn.png'
-  name = "Dyn"
-  url = 'http://www.dyn.com/'
-  lnk = 'dyn'
-  %]
-  [% END %]
-
-
-  [% WRAPPER isponsor
-  img = 'evozon.png'
-  name = 'EVOZON'
-  url = ' http://www.evozon.com'
-  lnk = 'evozon'
+  img = 'logo-cpanel.png'
+  name = 'cPanel'
+  url = 'https://cpanel.com/'
   %]
   [% END %]
 
   [% WRAPPER isponsor
-  img = 'logo.CampusExplorer.png'
-  name = 'Campus Explorer'
-  url = ' http://www.campusexplorer.com'
-  lnk = 'campusexplorer'
+  img = 'logo-maxmind.png'
+  name = 'MaxMind'
+  url = 'https://www.maxmind.com/'
   %]
-  [% END %]
-
-[% WRAPPER isponsor
-img = 'elasticsearch.jpg'
-name = 'elasticsearch'
-url = ' http://www.elasticsearch.com'
-lnk = 'elasticsearch'
-%]
   [% END %]
 
   [% WRAPPER isponsor
-  img = 'logo_mongueurs.png'
-  name = "Mongueurs de Perl"
-  url = 'http://mongueurs.pm/'
-  lnk = 'mongueurs'
+  img = 'logo-fastmail.png'
+  name = 'FastMail'
+  url = 'https://www.fastmail.com/'
   %]
   [% END %]
 
+  [% WRAPPER isponsor
+  img = 'logo-surevoip.png'
+  name = 'SureVoIP'
+  url = 'http://www.surevoip.co.uk'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsor
+  img = 'mongodb-logo-web.png'
+  name = 'MongoDB'
+  url = 'http://www.mongodb.org/'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsorbronze
+  name = 'Perl Services'
+  url = 'http://www.perl-services.de/impressum.html'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsorbronze
+  name = 'OpusVL'
+  url = 'http://www.opusvl.com/'
+  %]
+  [% END %]
+
+  [% WRAPPER isponsorbronze
+  name = 'CAPSiDE'
+  url = 'https://www.capside.com/'
+  %]
+  [% END %]
 
 </center>
 

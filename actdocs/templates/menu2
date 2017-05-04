@@ -15,9 +15,6 @@
         <a href="[% make_uri('sponsors.html') %]"> Sponsors </a>
     </li>
     <li>
-        <a href="[% make_uri('budget.html') %]"> Budget </a>
-    </li>
-    <li>
         <a href="[% make_uri('donate.html') %]"> Donate </a>
     </li>
     <li>

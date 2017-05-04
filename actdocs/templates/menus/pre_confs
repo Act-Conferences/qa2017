@@ -1,5 +1,5 @@
 <h3>
-    <a href="[% make_uri('pqah.html') %]">Past Toolchain Summit (known as QA Hackathons)</a>
+    <a href="[% make_uri('pqah.html') %]">Past Toolchain Summits <small>(known as QA Hackathons)</small></a>
 </h3>
 <div class="row-fluid visible-desktop">
     <div class="span6">

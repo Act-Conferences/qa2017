@@ -92,5 +92,11 @@
   %]
   [% END %]
 
+  [% WRAPPER isponsorbronze
+  name = 'Perl 6 Community (via WenzPerl)'
+  url = 'https://www.perl6.org/'
+  %]
+  [% END %]
+
 </center>
 
